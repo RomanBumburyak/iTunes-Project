@@ -51,7 +51,7 @@ function getResults () {
            for (var i = 0; i < data.results.length; i++) { //now we do a for loop to run through the data in the response from the API.
 
              let result = document.createElement('article');
-              result.setAttribute('class', 'searchResults');// 
+              result.setAttribute('class', 'searchResults');//
               result.id = i;
 
              result.innerHTML += //we do the plus equals because we want to
@@ -72,12 +72,11 @@ function getResults () {
               });
 
                display.appendChild(result);
-               function playSong(indexStr) {
+               function playSong(x) {
 
-
-                 let index = Number(indexStr);
+                 let index = Number(x);
                  let player = document.getElementById('music-player');
-                 let musicUrl = data.results[i].previewUrl;
+                 let musicUrl = data.results[index].previewUrl;
                  player.setAttribute('src', musicUrl);
                  player.play();
                }
@@ -93,7 +92,6 @@ function getResults () {
     });
 
 }
-
 
 // button.addEventListener('click', getResults);
 // let song = document.querySelector(".searchResults");
