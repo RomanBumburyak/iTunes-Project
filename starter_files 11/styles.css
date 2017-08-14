@@ -1,11 +1,13 @@
 body {
-  background-color: #60d9f1;
+  background-color: rgb(202, 225, 255);
 }
 
-
+h1{
+  font-family: sans-serif;
+}
 .results {
   /*overflow: auto;*/
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -13,9 +15,17 @@ body {
 
 .searchResults {
   width: 150px;
-  
   margin-left: 15px;
   margin-bottom: 15px;
+}
+#music-player {
+  width: 1000px;
+}
 
+.inputBox {
+  width: 500px;
+}
 
+.button{
+  color: rgb(193, 205, 205);
 }
